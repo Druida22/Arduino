@@ -1,3 +1,3 @@
 # Arduino
 
-# Aquest repositori es per posar el programes d'Arduino fets a classe
+Copy code<small>Aquest repositori es per a posar el programas fets i utilitzats al projecte de classe</small> 
