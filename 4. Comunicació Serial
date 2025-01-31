@@ -1,0 +1,26 @@
+void setup() {
+  Serial.begin(9600);  // Initialize serial communication
+}
+
+void loop() {
+  Serial.println("Introdueix el primer número:");
+  while (Serial.available() == 0);  
+  int num1 = Serial.parseInt();  
+  clearSerialBuffer();  
+
+  Serial.println("Introdueix el segon número:");
+  while (Serial.available() == 0);  
+  int num2 = Serial.parseInt();  
+  clearSerialBuffer();  
+
+  int resultat = num1 + num2;  
+  Serial.print("La suma és: ");
+  Serial.println(resultat);  
+}
+
+// Funció per a esborrar els caracters del buffer
+void clearSerialBuffer() {
+  while (Serial.available() > 0) {
+    Serial.read(); 
+  }
+}
